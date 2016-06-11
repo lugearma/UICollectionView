@@ -42,10 +42,53 @@
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="r1" translatesAutoresizingMaskIntoConstraints="NO" id="Oiu-vw-tLU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
+                                                            </imageView>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Via-5v-8cH">
+                                                                <rect key="frame" x="0.0" y="300" width="280" height="80"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6YU-OR-xGx">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We love traveling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPk-jq-nYd">
+                                                                            <rect key="frame" x="8" y="16" width="264" height="48"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="EPk-jq-nYd" firstAttribute="leading" secondItem="6YU-OR-xGx" secondAttribute="leading" constant="8" id="08S-6f-Rg9"/>
+                                                                        <constraint firstItem="EPk-jq-nYd" firstAttribute="top" secondItem="6YU-OR-xGx" secondAttribute="top" constant="16" id="Keq-Sn-9Sg"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="EPk-jq-nYd" secondAttribute="bottom" constant="16" id="daI-RY-4Pm"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="EPk-jq-nYd" secondAttribute="trailing" constant="8" id="hGv-oq-TWR"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="80" id="v4W-it-zdE"/>
+                                                                </constraints>
+                                                                <blurEffect style="extraLight"/>
+                                                            </visualEffectView>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
+                                                    <constraints>
+                                                        <constraint firstItem="Oiu-vw-tLU" firstAttribute="top" secondItem="5Jr-v0-UbS" secondAttribute="top" id="36x-jb-eVT"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Via-5v-8cH" secondAttribute="bottom" id="JmC-hW-Df4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Oiu-vw-tLU" secondAttribute="bottom" id="dnB-aZ-cbD"/>
+                                                        <constraint firstItem="Oiu-vw-tLU" firstAttribute="leading" secondItem="5Jr-v0-UbS" secondAttribute="leading" id="g63-i7-Uls"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Oiu-vw-tLU" secondAttribute="trailing" id="mcK-NC-59x"/>
+                                                        <constraint firstItem="Via-5v-8cH" firstAttribute="leading" secondItem="5Jr-v0-UbS" secondAttribute="leading" id="oBl-5x-tih"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Via-5v-8cH" secondAttribute="trailing" id="z3h-mY-HJO"/>
+                                                    </constraints>
                                                 </collectionViewCell>
                                             </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="PEj-UM-sHO" id="Gun-IK-gB3"/>
+                                                <outlet property="delegate" destination="PEj-UM-sHO" id="b6p-PJ-zCb"/>
+                                            </connections>
                                         </collectionView>
                                     </subviews>
                                 </view>
