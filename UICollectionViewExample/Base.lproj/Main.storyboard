@@ -107,6 +107,10 @@
                             <constraint firstItem="sNg-a7-tpg" firstAttribute="top" secondItem="d06-yN-kLr" secondAttribute="bottom" id="t6X-gB-h3e"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Qqz-7E-kg3" id="q3W-yY-jHn"/>
+                        <outlet property="collectionView" destination="YrE-cJ-yoM" id="VXM-yf-bQI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1d-sU-S1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
