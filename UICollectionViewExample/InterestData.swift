@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InterestData{
+class Interest{
     
     var title = ""
     var description = ""
@@ -24,14 +24,14 @@ class InterestData{
         numberOfPost = 1
     }
     
-    static func createInterest() -> [InterestData]{
+    static func createInterest() -> [Interest]{
         return[
-            InterestData(title: "We love traveling", description: "Description One", featuredImage: UIImage(named: "r1")!),
-            InterestData(title: "We love animals", description: "Description Two", featuredImage: UIImage(named: "r2")!),
-            InterestData(title: "We enjoy run over the street", description: "Description Three", featuredImage: UIImage(named: "r3")!),
-            InterestData(title: "We hate Trup", description:   "Description Four", featuredImage: UIImage(named: "r4")!),
-            InterestData(title: "We hate Peña", description: "Description Five", featuredImage: UIImage(named: "r5")!),
-            InterestData(title: "We can do it", description: "Description Six", featuredImage: UIImage(named: "r6")!)
+            Interest(title: "We love traveling", description: "Description One", featuredImage: UIImage(named: "r1")!),
+            Interest(title: "We love animals", description: "Description Two", featuredImage: UIImage(named: "r2")!),
+            Interest(title: "We enjoy run over the street", description: "Description Three", featuredImage: UIImage(named: "r3")!),
+            Interest(title: "We hate Trup", description:   "Description Four", featuredImage: UIImage(named: "r4")!),
+            Interest(title: "We hate Peña", description: "Description Five", featuredImage: UIImage(named: "r5")!),
+            Interest(title: "We can do it", description: "Description Six", featuredImage: UIImage(named: "r6")!)
         ]
     }
 }

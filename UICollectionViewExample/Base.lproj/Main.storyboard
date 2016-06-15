@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PEj-UM-sHO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -36,7 +36,7 @@
                                                 <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5Jr-v0-UbS">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Interest Cell" id="5Jr-v0-UbS" customClass="InterestCollectionViewCell" customModule="UICollectionViewExample" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="36" width="280" height="380"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -83,6 +83,10 @@
                                                         <constraint firstItem="Via-5v-8cH" firstAttribute="leading" secondItem="5Jr-v0-UbS" secondAttribute="leading" id="oBl-5x-tih"/>
                                                         <constraint firstAttribute="trailing" secondItem="Via-5v-8cH" secondAttribute="trailing" id="z3h-mY-HJO"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outlet property="featuredImageView" destination="Oiu-vw-tLU" id="d3f-NW-reu"/>
+                                                        <outlet property="interestTitleLabel" destination="EPk-jq-nYd" id="aUJ-k1-hI1"/>
+                                                    </connections>
                                                 </collectionViewCell>
                                             </cells>
                                             <connections>
