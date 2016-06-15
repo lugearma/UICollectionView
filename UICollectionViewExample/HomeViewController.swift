@@ -20,6 +20,10 @@ class HomeViewController: UIViewController {
 
     private var interest = Interest.createInterest()
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
